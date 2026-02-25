@@ -2,6 +2,8 @@
 A production-style REST API built using FastAPI to manage patient records efficiently.
 Supports full CRUD operations with automatic BMI calculation and health classification.
 
+
+
 📌 1️⃣ Introduction
 The Patient Management System API provides endpoints to manage patient data including:
 Patient creation
@@ -10,6 +12,8 @@ Updates
 Deletion
 Automatic BMI computation
 Health status classification
+
+
 
 Designed following clean backend architecture principles.
 🚀 2️⃣ Features
@@ -21,6 +25,8 @@ Designed following clean backend architecture principles.
 ✅ Sorting by height, weight, or BMI
 ✅ Interactive Swagger & ReDoc documentation
 
+
+
 ⚙️ 3️⃣ Getting Started
 📦 Requirements
 Python 3.8+
@@ -28,7 +34,7 @@ FastAPI
 Uvicorn
 
 🔧 Installation
-git clone https://github.com/YOUR-USERNAME/patient-management-api.git
+git clone https://github.com/ashwinipadashetti/patient-management-api.git
 cd patient-management-api
 
 python -m venv venv
@@ -45,10 +51,14 @@ http://127.0.0.1:8000
 Swagger UI → http://127.0.0.1:8000/docs
 ReDoc → http://127.0.0.1:8000/redoc
 
+
+
 🔐 Authentication
 Currently, the API does not implement authentication.
 All endpoints are publicly accessible.
 Future scope: JWT-based authentication integration.
+
+
 
 📌 API Endpoints
 Method	Endpoint	Description
@@ -60,6 +70,8 @@ POST	/create	Create new patient
 PUT	/update/{id}	Update patient
 DELETE	/delete/{id}	Delete patient
 GET	/sort	Sort patients
+
+
 
 Example:
 GET /sort?sort_by=bmi&order=desc
@@ -77,6 +89,8 @@ curl -X POST http://127.0.0.1:8000/create \
   "weight": 70
 }'
 
+
+
 🧮 BMI Calculation
 BMI = weight / (height²)
 BMI Range	Classification
@@ -85,12 +99,16 @@ BMI Range	Classification
 25 – 29.9	Overweight
 ≥ 30	Obese
 
+
+
 🛠️ Tech Stack
 🐍 Python
 ⚡ FastAPI
 📦 Pydantic
 🚀 Uvicorn
 🗂️ JSON (File-based persistence)
+
+
 
 📄 License
 This project is licensed under the MIT License.
